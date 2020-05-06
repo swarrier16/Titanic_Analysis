@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="sex <= 1.5\ngini = 0.47\nsamples = 982\nvalue = [611, 371]"] ;
+1 [label="agerange <= 0.5\ngini = 0.309\nsamples = 643\nvalue = [520, 123]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="siblings/spouses <= 2.5\ngini = 0.495\nsamples = 40\nvalue = [18, 22]"] ;
+1 -> 2 ;
+3 [label="(...)"] ;
+2 -> 3 ;
+18 [label="(...)"] ;
+2 -> 18 ;
+25 [label="pclass <= 1.5\ngini = 0.279\nsamples = 603\nvalue = [502, 101]"] ;
+1 -> 25 ;
+26 [label="(...)"] ;
+25 -> 26 ;
+119 [label="(...)"] ;
+25 -> 119 ;
+292 [label="pclass <= 2.5\ngini = 0.393\nsamples = 339\nvalue = [91, 248]"] ;
+0 -> 292 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+293 [label="farerange <= 3.5\ngini = 0.117\nsamples = 177\nvalue = [11, 166]"] ;
+292 -> 293 ;
+294 [label="(...)"] ;
+293 -> 294 ;
+319 [label="(...)"] ;
+293 -> 319 ;
+350 [label="farerange <= 3.5\ngini = 0.5\nsamples = 162\nvalue = [80, 82]"] ;
+292 -> 350 ;
+351 [label="(...)"] ;
+350 -> 351 ;
+480 [label="(...)"] ;
+350 -> 480 ;
+}
